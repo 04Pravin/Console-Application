@@ -17,14 +17,18 @@ public class StudentServiceImpl implements IStudentService {
 
 	}
 
-	public void deleteStudent(int id) {
-		// TODO Auto-generated method stub
-
+	public void deleteStudent(int id) throws SQLException {
+		studentDao.deleteStudent(id);
 	}
 
 	public List<Student> getAll() throws SQLException {
 		// TODO Auto-generated method stub
 		return studentDao.getAll();
+	}
+
+	public Student getById(int id) throws SQLException {
+		// TODO Auto-generated method stub
+		return studentDao.getById(id);
 	}
 
 }
