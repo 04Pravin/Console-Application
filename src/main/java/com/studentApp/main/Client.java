@@ -20,7 +20,10 @@ public class Client {
 		int select = sc.nextInt();
 
 		switch (select) {
-
+		
+		case 0: System.out.println("Thank you");
+				break;
+				
 		case 1:
 			System.out.println("Welcome user");
 			System.out.println("Please select\n1. Show all\n2. Detail view");
@@ -28,7 +31,7 @@ public class Client {
 
 			switch (value) {
 			case 1: {
-				System.out.println("*****Showing all*****");
+				System.out.println("*****Showing all the students*****");
 				List<Student> students = studentService.getAll();
 				for (Student student : students) {
 					System.out.println(student);
@@ -98,7 +101,7 @@ public class Client {
 				break;
 			}
 			case 4: {
-				System.out.println("*****Showing all*****");
+				System.out.println("*****Showing all the students*****");
 				List<Student> students = studentService.getAll();
 				for (Student student : students) {
 					System.out.println(student);
