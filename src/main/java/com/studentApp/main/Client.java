@@ -36,14 +36,18 @@ public class Client {
 				System.out.println();
 				break;
 			}
-			
+
 			case 2: {
 				System.out.println("*****Detail view*****");
-				System.out.println("Enter student id :");
+				System.out.println("Enter student id for detail view:");
 				int id = sc.nextInt();
 				Student student = new Student();
 				student = studentService.getById(id);
-				System.out.println(student);
+				System.out.println("Id: " + student.getId());
+				System.out.println("Name: " + student.getName());
+				System.out.println("Department: " + student.getDepartment());
+				System.out.println("Mobile Number: " + student.getMobileNum());
+				System.out.println("College: " + student.getCollege());
 			}
 			}
 
